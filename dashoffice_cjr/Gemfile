@@ -57,4 +57,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# gem Devise: authentications ----> https://github.com/plataformatec/devise
 gem 'devise'
+
+# gem Simple_Form ---> https://github.com/plataformatec/simple_form
+gem 'simple_form'
+
+# gem ajax-datatables-rails ---> https://github.com/jbox-web/ajax-datatables-rails
+gem 'ajax-datatables-rails'
+
+# gem jquery-datatables ----> https://github.com/mkhairi/jquery-datatables
+gem 'jquery-datatables'
