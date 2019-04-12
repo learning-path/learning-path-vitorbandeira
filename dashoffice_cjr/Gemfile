@@ -61,7 +61,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem Devise: authentications ----> https://github.com/plataformatec/devise
 gem 'devise'
 
-# gem Simple_Form ---> https://github.com/plataformatec/simple_form
+# gem Simple_Form (forms with Bootstrap)---> https://github.com/plataformatec/simple_form
 gem 'simple_form'
 
 # gem ajax-datatables-rails ---> https://github.com/jbox-web/ajax-datatables-rails

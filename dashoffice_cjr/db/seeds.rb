@@ -41,3 +41,5 @@ Deal.destroy_all
 d1 = Deal.create!(customer_id: ct.id, name: 'proaDHO', description: 'Rogue',
 primary_seller_id: u1.id, secondary_seller_id: u2.id, start_date: '2019-01-10',
 active: true, done: false, price: 8.88)
+
+puts 'Seeds OK'

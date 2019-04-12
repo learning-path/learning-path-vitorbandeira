@@ -1384,3 +1384,620 @@ FOREIGN KEY ("tag_id")
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mCustomer Load (1.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mUserTrouble Load (0.4ms)[0m  [1m[34mSELECT  "user_troubles".* FROM "user_troubles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3984984924356530605)[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3984984924356530605)[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "dashoffice_cjr_development" ENCODING = 'unicode'[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "dashoffice_cjr_test" ENCODING = 'unicode'[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (8.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cores" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "cores" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "deal_steps" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "deal_steps" ("id" bigserial primary key, "step_id" bigint, "deal_id" bigint, "entry_date" date, "conclusion_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_deal_steps_on_deal_id" ON "deal_steps"  ("deal_id")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE  INDEX  "index_deal_steps_on_step_id" ON "deal_steps"  ("step_id")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "deal_tags" CASCADE[0m
+  ↳ db/schema.rb:43
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "deal_tags" ("id" bigserial primary key, "deal_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:43
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_deal_tags_on_deal_id" ON "deal_tags"  ("deal_id")[0m
+  ↳ db/schema.rb:43
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE  INDEX  "index_deal_tags_on_tag_id" ON "deal_tags"  ("tag_id")[0m
+  ↳ db/schema.rb:43
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "deals" CASCADE[0m
+  ↳ db/schema.rb:52
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "deals" ("id" bigserial primary key, "customer_id" bigint, "name" character varying, "description" text, "primary_seller_id" bigint, "secondary_seller_id" bigint, "start_date" date, "active" boolean, "done" boolean, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_customer_id" ON "deals"  ("customer_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_primary_seller_id" ON "deals"  ("primary_seller_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_secondary_seller_id" ON "deals"  ("secondary_seller_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "feedbacks" CASCADE[0m
+  ↳ db/schema.rb:69
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "feedbacks" ("id" bigserial primary key, "user_id" bigint, "text_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:69
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_feedbacks_on_text_id" ON "feedbacks"  ("text_id")[0m
+  ↳ db/schema.rb:69
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_feedbacks_on_user_id" ON "feedbacks"  ("user_id")[0m
+  ↳ db/schema.rb:69
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_developers" CASCADE[0m
+  ↳ db/schema.rb:78
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "project_developers" ("id" bigserial primary key, "project_id" bigint, "user_id" bigint, "project_manager" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:78
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_project_developers_on_project_id" ON "project_developers"  ("project_id")[0m
+  ↳ db/schema.rb:78
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE  INDEX  "index_project_developers_on_user_id" ON "project_developers"  ("user_id")[0m
+  ↳ db/schema.rb:78
+  [1m[35m (2.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_requirements" CASCADE[0m
+  ↳ db/schema.rb:88
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "project_requirements" ("id" bigserial primary key, "project_id" bigint, "requirement_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:88
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_project_requirements_on_project_id" ON "project_requirements"  ("project_id")[0m
+  ↳ db/schema.rb:88
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_project_requirements_on_requirement_id" ON "project_requirements"  ("requirement_id")[0m
+  ↳ db/schema.rb:88
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_tags" CASCADE[0m
+  ↳ db/schema.rb:97
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "project_tags" ("id" bigserial primary key, "project_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:97
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_project_tags_on_project_id" ON "project_tags"  ("project_id")[0m
+  ↳ db/schema.rb:97
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX  "index_project_tags_on_tag_id" ON "project_tags"  ("tag_id")[0m
+  ↳ db/schema.rb:97
+  [1m[35m (3.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:106
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "customer_id" bigint, "start_date" date, "conclusion_date" date, "open_scope" boolean, "sprints" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:106
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_projects_on_customer_id" ON "projects"  ("customer_id")[0m
+  ↳ db/schema.rb:106
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "requirements" CASCADE[0m
+  ↳ db/schema.rb:120
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "requirements" ("id" bigserial primary key, "name" character varying, "price" float, "sprints" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:120
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles" CASCADE[0m
+  ↳ db/schema.rb:128
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:128
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "steps" CASCADE[0m
+  ↳ db/schema.rb:134
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "steps" ("id" bigserial primary key, "name" character varying, "deadline" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:134
+  [1m[35m (4.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tags" CASCADE[0m
+  ↳ db/schema.rb:141
+  [1m[35m (26.2ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "color" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:141
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "troubles" CASCADE[0m
+  ↳ db/schema.rb:148
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "troubles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:148
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_troubles" CASCADE[0m
+  ↳ db/schema.rb:154
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "user_troubles" ("id" bigserial primary key, "user_id" bigint, "trouble_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:154
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_user_troubles_on_trouble_id" ON "user_troubles"  ("trouble_id")[0m
+  ↳ db/schema.rb:154
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_user_troubles_on_user_id" ON "user_troubles"  ("user_id")[0m
+  ↳ db/schema.rb:154
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:163
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying, "admin" boolean, "role_id" bigint, "core_id" bigint, "active" boolean)[0m
+  ↳ db/schema.rb:163
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_core_id" ON "users"  ("core_id")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "deal_steps" ADD CONSTRAINT "fk_rails_9430ca4ed3"
+FOREIGN KEY ("deal_id")
+  REFERENCES "deals" ("id")
+[0m
+  ↳ db/schema.rb:182
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "deal_steps" ADD CONSTRAINT "fk_rails_c4e5fbe4b7"
+FOREIGN KEY ("step_id")
+  REFERENCES "steps" ("id")
+[0m
+  ↳ db/schema.rb:183
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "deal_tags" ADD CONSTRAINT "fk_rails_74ca825fd9"
+FOREIGN KEY ("deal_id")
+  REFERENCES "deals" ("id")
+[0m
+  ↳ db/schema.rb:184
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "deal_tags" ADD CONSTRAINT "fk_rails_36a27d094c"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+[0m
+  ↳ db/schema.rb:185
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_7e1cd45972"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+[0m
+  ↳ db/schema.rb:186
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_e5e8ede5b2"
+FOREIGN KEY ("primary_seller_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:187
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_b10938c472"
+FOREIGN KEY ("secondary_seller_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:188
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "feedbacks" ADD CONSTRAINT "fk_rails_c57bb6cf28"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:189
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "project_developers" ADD CONSTRAINT "fk_rails_caa521d3a8"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:190
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "project_developers" ADD CONSTRAINT "fk_rails_17057fa45e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:191
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "project_requirements" ADD CONSTRAINT "fk_rails_d1dd04a8fd"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:192
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "project_requirements" ADD CONSTRAINT "fk_rails_70df0377e9"
+FOREIGN KEY ("requirement_id")
+  REFERENCES "requirements" ("id")
+[0m
+  ↳ db/schema.rb:193
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "project_tags" ADD CONSTRAINT "fk_rails_a52ff3d861"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:194
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "project_tags" ADD CONSTRAINT "fk_rails_980b91da53"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+[0m
+  ↳ db/schema.rb:195
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "projects" ADD CONSTRAINT "fk_rails_47c768ed16"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+[0m
+  ↳ db/schema.rb:196
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "user_troubles" ADD CONSTRAINT "fk_rails_edeb0e808f"
+FOREIGN KEY ("trouble_id")
+  REFERENCES "troubles" ("id")
+[0m
+  ↳ db/schema.rb:197
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "user_troubles" ADD CONSTRAINT "fk_rails_4dac391ac5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:198
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_4e12d75d3d"
+FOREIGN KEY ("core_id")
+  REFERENCES "cores" ("id")
+[0m
+  ↳ db/schema.rb:199
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_642f17018b"
+FOREIGN KEY ("role_id")
+  REFERENCES "roles" ("id")
+[0m
+  ↳ db/schema.rb:200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "cores" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "cores" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "deal_steps" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "deal_steps" ("id" bigserial primary key, "step_id" bigint, "deal_id" bigint, "entry_date" date, "conclusion_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_deal_steps_on_deal_id" ON "deal_steps"  ("deal_id")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_deal_steps_on_step_id" ON "deal_steps"  ("step_id")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "deal_tags" CASCADE[0m
+  ↳ db/schema.rb:43
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "deal_tags" ("id" bigserial primary key, "deal_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:43
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_deal_tags_on_deal_id" ON "deal_tags"  ("deal_id")[0m
+  ↳ db/schema.rb:43
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_deal_tags_on_tag_id" ON "deal_tags"  ("tag_id")[0m
+  ↳ db/schema.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "deals" CASCADE[0m
+  ↳ db/schema.rb:52
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "deals" ("id" bigserial primary key, "customer_id" bigint, "name" character varying, "description" text, "primary_seller_id" bigint, "secondary_seller_id" bigint, "start_date" date, "active" boolean, "done" boolean, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_customer_id" ON "deals"  ("customer_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_primary_seller_id" ON "deals"  ("primary_seller_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_deals_on_secondary_seller_id" ON "deals"  ("secondary_seller_id")[0m
+  ↳ db/schema.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "feedbacks" CASCADE[0m
+  ↳ db/schema.rb:69
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "feedbacks" ("id" bigserial primary key, "user_id" bigint, "text_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:69
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_feedbacks_on_text_id" ON "feedbacks"  ("text_id")[0m
+  ↳ db/schema.rb:69
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_feedbacks_on_user_id" ON "feedbacks"  ("user_id")[0m
+  ↳ db/schema.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_developers" CASCADE[0m
+  ↳ db/schema.rb:78
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "project_developers" ("id" bigserial primary key, "project_id" bigint, "user_id" bigint, "project_manager" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:78
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_project_developers_on_project_id" ON "project_developers"  ("project_id")[0m
+  ↳ db/schema.rb:78
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_project_developers_on_user_id" ON "project_developers"  ("user_id")[0m
+  ↳ db/schema.rb:78
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_requirements" CASCADE[0m
+  ↳ db/schema.rb:88
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "project_requirements" ("id" bigserial primary key, "project_id" bigint, "requirement_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:88
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_project_requirements_on_project_id" ON "project_requirements"  ("project_id")[0m
+  ↳ db/schema.rb:88
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_project_requirements_on_requirement_id" ON "project_requirements"  ("requirement_id")[0m
+  ↳ db/schema.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "project_tags" CASCADE[0m
+  ↳ db/schema.rb:97
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "project_tags" ("id" bigserial primary key, "project_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:97
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_project_tags_on_project_id" ON "project_tags"  ("project_id")[0m
+  ↳ db/schema.rb:97
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_project_tags_on_tag_id" ON "project_tags"  ("tag_id")[0m
+  ↳ db/schema.rb:97
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:106
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "customer_id" bigint, "start_date" date, "conclusion_date" date, "open_scope" boolean, "sprints" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:106
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_projects_on_customer_id" ON "projects"  ("customer_id")[0m
+  ↳ db/schema.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "requirements" CASCADE[0m
+  ↳ db/schema.rb:120
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "requirements" ("id" bigserial primary key, "name" character varying, "price" float, "sprints" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:120
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles" CASCADE[0m
+  ↳ db/schema.rb:128
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:128
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "steps" CASCADE[0m
+  ↳ db/schema.rb:134
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "steps" ("id" bigserial primary key, "name" character varying, "deadline" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:134
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "tags" CASCADE[0m
+  ↳ db/schema.rb:141
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "color" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:141
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "troubles" CASCADE[0m
+  ↳ db/schema.rb:148
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "troubles" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:148
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_troubles" CASCADE[0m
+  ↳ db/schema.rb:154
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "user_troubles" ("id" bigserial primary key, "user_id" bigint, "trouble_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:154
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_user_troubles_on_trouble_id" ON "user_troubles"  ("trouble_id")[0m
+  ↳ db/schema.rb:154
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_user_troubles_on_user_id" ON "user_troubles"  ("user_id")[0m
+  ↳ db/schema.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:163
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying, "admin" boolean, "role_id" bigint, "core_id" bigint, "active" boolean)[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_core_id" ON "users"  ("core_id")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  ↳ db/schema.rb:163
+  [1m[35m (5.6ms)[0m  [1m[35mALTER TABLE "deal_steps" ADD CONSTRAINT "fk_rails_9430ca4ed3"
+FOREIGN KEY ("deal_id")
+  REFERENCES "deals" ("id")
+[0m
+  ↳ db/schema.rb:182
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "deal_steps" ADD CONSTRAINT "fk_rails_c4e5fbe4b7"
+FOREIGN KEY ("step_id")
+  REFERENCES "steps" ("id")
+[0m
+  ↳ db/schema.rb:183
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "deal_tags" ADD CONSTRAINT "fk_rails_74ca825fd9"
+FOREIGN KEY ("deal_id")
+  REFERENCES "deals" ("id")
+[0m
+  ↳ db/schema.rb:184
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "deal_tags" ADD CONSTRAINT "fk_rails_36a27d094c"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+[0m
+  ↳ db/schema.rb:185
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_7e1cd45972"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+[0m
+  ↳ db/schema.rb:186
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_e5e8ede5b2"
+FOREIGN KEY ("primary_seller_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:187
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "deals" ADD CONSTRAINT "fk_rails_b10938c472"
+FOREIGN KEY ("secondary_seller_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:188
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "feedbacks" ADD CONSTRAINT "fk_rails_c57bb6cf28"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:189
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "project_developers" ADD CONSTRAINT "fk_rails_caa521d3a8"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:190
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "project_developers" ADD CONSTRAINT "fk_rails_17057fa45e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:191
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "project_requirements" ADD CONSTRAINT "fk_rails_d1dd04a8fd"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:192
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "project_requirements" ADD CONSTRAINT "fk_rails_70df0377e9"
+FOREIGN KEY ("requirement_id")
+  REFERENCES "requirements" ("id")
+[0m
+  ↳ db/schema.rb:193
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "project_tags" ADD CONSTRAINT "fk_rails_a52ff3d861"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+[0m
+  ↳ db/schema.rb:194
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "project_tags" ADD CONSTRAINT "fk_rails_980b91da53"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+[0m
+  ↳ db/schema.rb:195
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "projects" ADD CONSTRAINT "fk_rails_47c768ed16"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+[0m
+  ↳ db/schema.rb:196
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "user_troubles" ADD CONSTRAINT "fk_rails_edeb0e808f"
+FOREIGN KEY ("trouble_id")
+  REFERENCES "troubles" ("id")
+[0m
+  ↳ db/schema.rb:197
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "user_troubles" ADD CONSTRAINT "fk_rails_4dac391ac5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:198
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_4e12d75d3d"
+FOREIGN KEY ("core_id")
+  REFERENCES "cores" ("id")
+[0m
+  ↳ db/schema.rb:199
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_642f17018b"
+FOREIGN KEY ("role_id")
+  REFERENCES "roles" ("id")
+[0m
+  ↳ db/schema.rb:200
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190405005907)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190405005155),
+(20190405005222),
+(20190405005523),
+(20190405005740),
+(20190405005630),
+(20190405005449),
+(20190405005140),
+(20190405005644),
+(20190405005209),
+(20190405005532),
+(20190405005658),
+(20190405005716),
+(20190405005414),
+(20190405005726),
+(20190405005607),
+(20190405005331),
+(20190405005846);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-12 19:33:29.411899"], ["updated_at", "2019-04-12 19:33:29.411899"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-04-12 19:33:29.418699"], ["key", "environment"]]
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vitor/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mTrouble Load (1.3ms)[0m  [1m[34mSELECT "troubles".* FROM "troubles"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrouble Create (0.4ms)[0m  [1m[32mINSERT INTO "troubles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "OAC"], ["created_at", "2019-04-12 19:33:29.453594"], ["updated_at", "2019-04-12 19:33:29.453594"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRole Load (1.8ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mRole Create (0.4ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Gerente"], ["created_at", "2019-04-12 19:33:29.467750"], ["updated_at", "2019-04-12 19:33:29.467750"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCore Load (1.0ms)[0m  [1m[34mSELECT "cores".* FROM "cores"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCore Create (0.4ms)[0m  [1m[32mINSERT INTO "cores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "NUT"], ["created_at", "2019-04-12 19:33:29.479247"], ["updated_at", "2019-04-12 19:33:29.479247"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "icarorezende@cjr.org.br"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "admin", "role_id", "core_id", "active") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "icarorezende@cjr.org.br"], ["encrypted_password", "$2a$11$qP9RElMDIGP3UOVEIdEBj.80HeVdqGEl4s0BeeDUh5r6ImuXEsB/e"], ["created_at", "2019-04-12 19:33:29.647861"], ["updated_at", "2019-04-12 19:33:29.647861"], ["name", "Icaro Rezende"], ["admin", false], ["role_id", 1], ["core_id", 1], ["active", true]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vitorbandeira@cjr.org.br"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "admin", "role_id", "core_id", "active") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "vitorbandeira@cjr.org.br"], ["encrypted_password", "$2a$11$fSd34uKu1uLmz5iORA8B0.PRxomNsKJkO5v8phO6XSLR5MgcjdwnO"], ["created_at", "2019-04-12 19:33:29.786021"], ["updated_at", "2019-04-12 19:33:29.786021"], ["name", "Vitor Ribas"], ["admin", false], ["role_id", 1], ["core_id", 1], ["active", true]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUserTrouble Load (0.4ms)[0m  [1m[34mSELECT "user_troubles".* FROM "user_troubles"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mTrouble Load (0.2ms)[0m  [1m[34mSELECT  "troubles".* FROM "troubles" WHERE "troubles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUserTrouble Create (0.7ms)[0m  [1m[32mINSERT INTO "user_troubles" ("user_id", "trouble_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["trouble_id", 1], ["created_at", "2019-04-12 19:33:29.824300"], ["updated_at", "2019-04-12 19:33:29.824300"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mTrouble Load (0.2ms)[0m  [1m[34mSELECT  "troubles".* FROM "troubles" WHERE "troubles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUserTrouble Create (0.4ms)[0m  [1m[32mINSERT INTO "user_troubles" ("user_id", "trouble_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["trouble_id", 1], ["created_at", "2019-04-12 19:33:29.829514"], ["updated_at", "2019-04-12 19:33:29.829514"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[36mStep Load (0.9ms)[0m  [1m[34mSELECT "steps".* FROM "steps"[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mStep Create (0.5ms)[0m  [1m[32mINSERT INTO "steps" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Apresentação"], ["created_at", "2019-04-12 19:33:29.842515"], ["updated_at", "2019-04-12 19:33:29.842515"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mStep Create (0.2ms)[0m  [1m[32mINSERT INTO "steps" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Contato"], ["created_at", "2019-04-12 19:33:29.845538"], ["updated_at", "2019-04-12 19:33:29.845538"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "phone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bruno Lopes"], ["email", "vasila1@vasilo.com"], ["phone", "123456789"], ["created_at", "2019-04-12 19:33:29.858282"], ["updated_at", "2019-04-12 19:33:29.858282"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Empresa"], ["created_at", "2019-04-12 19:33:29.873072"], ["updated_at", "2019-04-12 19:33:29.873072"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mDeal Load (1.1ms)[0m  [1m[34mSELECT "deals".* FROM "deals"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mDeal Create (0.7ms)[0m  [1m[32mINSERT INTO "deals" ("customer_id", "name", "description", "primary_seller_id", "secondary_seller_id", "start_date", "active", "done", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["customer_id", 1], ["name", "proaDHO"], ["description", "Rogue"], ["primary_seller_id", 1], ["secondary_seller_id", 2], ["start_date", "2019-01-10"], ["active", true], ["done", false], ["price", 8.88], ["created_at", "2019-04-12 19:33:29.911387"], ["updated_at", "2019-04-12 19:33:29.911387"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
